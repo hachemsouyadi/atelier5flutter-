@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'page_infos.dart';
+import 'page_profil.dart';
+
 
 class PageAccueil extends StatelessWidget {
   const PageAccueil({super.key});
@@ -23,6 +25,16 @@ MaterialPageRoute(builder: (context) => PageInfos()),
 },
 child: Text("Allez à la page Infos"),
 ),
+ElevatedButton(
+  onPressed: () {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => PageProfil()),
+    );
+  },
+  child: Text("Aller à la page Profil"),
+),
+
 
  ],
  ),
