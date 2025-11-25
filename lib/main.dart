@@ -1,23 +1,16 @@
 import 'package:flutter/material.dart';
+import 'page_accueil.dart';
 
-class PageAccueil extends StatelessWidget {
-  const PageAccueil({super.key});
+void main() {
+  runApp(const MainApp());
+}
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
- home: Scaffold(
-appBar: AppBar(title: Text("Page d'accueil")),
- body: Center(
- child: Column(
- mainAxisAlignment: MainAxisAlignment.center,
- children: [
- Text("Bienvenue sur la page d'accueil !"),
- ],
- ),
- ),
- ),
- );
+class MainApp extends StatelessWidget {
+const MainApp({super.key});
+@override
+Widget build(BuildContext context) {
+return MaterialApp(
+home: PageAccueil()
+);
 }
 }
-   
